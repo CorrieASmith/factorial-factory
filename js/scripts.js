@@ -7,3 +7,16 @@ var factorialFactory = function(number) {
   };
   return total;
 };
+
+$(document).ready(function() {
+  $("form#factorial-factory").submit(function(event) {
+    var factorial = parseInt($("input#factorial").val());
+    var output = factorialFactory(factorial);
+
+    $(".factorial").text(factorial);
+    $(".output").text(output);
+
+    $("#output").show();
+    event.preventDefault();
+  });
+});
