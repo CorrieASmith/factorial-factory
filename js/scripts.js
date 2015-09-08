@@ -7,16 +7,3 @@ var factorialFactory = function(number) {
   };
   return total;
 };
-
-
-
-// var factorialFactory = function(number) {
-//
-//     if (number > 0) {
-//       factorialFactory(number - 1);
-//     }
-//
-//     var total = total * number;
-//
-//     return total;
-// };
