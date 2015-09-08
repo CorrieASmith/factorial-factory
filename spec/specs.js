@@ -6,4 +6,8 @@ describe('factorialFactory', function () {
   it("determines whether or not integer is greater than zero", function () {
     expect(factorialFactory(0)).to.equal(1);
   });
+
+  it("determines whether or not integer is positive", function () {
+    expect(factorialFactory(-1)).to.equal(1);
+  });
 });
